@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
+import Banner from "./components/Banner"; // ✅ import Banner
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,8 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
+      <Banner />   {/* ✅ Banner on top */}
+      <Navbar />   {/* ✅ Navbar below it */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -22,7 +22,7 @@ function Preloader() {
         background: "#f20606ff"
       }}>
         <img 
-          src="/Preloader.png"  // put your image in public folder (public/logo.png)
+          src="/Preloader.png"  
           alt="Loading..."
           style={{ width: "300px", height: "300px" }}
         />
