@@ -1,4 +1,4 @@
-.contact-section {
+.contact-page {
   background: #fff;
   padding: 50px 20px;
 }
@@ -9,26 +9,21 @@
   color: #222;
 }
 
-.contact-wrapper {
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
   background: #f5f5f5;
   padding: 40px;
-  margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 1100px;
-  width: 100%;
-  box-sizing: border-box; /* ✅ prevents extra width */
-}
-
-.contact-grid {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  flex-wrap: wrap; /* allows stacking on smaller screens */
 }
 
 .contact-info {
   flex: 1;
-  order: 1;
+  min-width: 250px;
 }
 
 .contact-info h2 {
@@ -36,24 +31,19 @@
   margin-bottom: 15px;
 }
 
-.contact-form {
+.contact-form-wrapper {
   flex: 1;
-  order: 2;
+  min-width: 250px;
 }
 
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
+.contact-form-wrapper label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -62,58 +52,42 @@
   box-sizing: border-box;
 }
 
-.contact-form button {
+.contact-form-wrapper button {
+  padding: 10px 20px;
   border: none;
   border-radius: 6px;
-  background-color: #ff0000ff;
+  background-color: #ff0000;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  display: inline-block;      /* ✅ allows width to fit content */
-  padding: 8px 12px;          /* smaller padding, adjusts automatically */
-  margin-top: 5px;
-  white-space: nowrap;        /* prevent text from wrapping */
 }
 
-.contact-form button:disabled {
+.contact-form-wrapper button:disabled {
   background-color: #999;
   cursor: not-allowed;
 }
 
-/* Mobile: slightly smaller font for small devices */
-@media (max-width: 768px) {
-  .contact-form button {
-    font-size: 14px;
-    padding: 6px 10px;       /* smaller and still fits text */
-  }
+.status {
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
-
-.success-msg {
-  margin-bottom: 20px;
+.status.success {
   color: green;
-  font-size: 20px;
 }
 
-.error-msg {
-  margin-bottom: 20px;
+.status.error {
   color: red;
-  font-size: 20px;
 }
 
-  .contact-grid {
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .contact-container {
     flex-direction: column;
-    gap: 20px;
+    padding: 20px;
   }
 
-  /* Info comes first */
-  .contact-info {
-    order: 1;
-    text-align: center;
-    margin-bottom: 20px;
+  .contact-form-wrapper button {
+    width: auto; /* button fits content */
   }
-
-  .contact-form {
-    order: 2;
-  }
-
+}
