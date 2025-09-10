@@ -1,36 +1,33 @@
 import { useEffect, useState } from "react";
+import "../styles/Preloader.css";
 
 function Preloader() {
   const [loading, setLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    // Simulate loading time (e.g., 2 seconds)
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    const handleLoad = () => {
+      // Trigger fade-out animation before removing completely
+      setFadeOut(true);
+      setTimeout(() => setLoading(false), 1000); // matches CSS animation time
+    };
 
-    return () => clearTimeout(timer);
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
 
-  if (loading) {
-    return (
-      <div style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        background: "#f20606ff"
-      }}>
-        <img 
-          src="/Preloader.png"  
-          alt="Loading..."
-          style={{ width: "300px", height: "300px" }}
-        />
-      </div>
-    );
-  }
+  if (!loading) return null;
 
-  return null;
+  return (
+    <div className={`preloader ${fadeOut ? "fade-out" : ""}`}>
+      <img 
+        src="/Preloader.png"  
+        alt="Loading..."
+        className="preloader-logo"
+      />
+    </div>
+  );
 }
 
 export default Preloader;

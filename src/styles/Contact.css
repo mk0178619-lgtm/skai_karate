@@ -1,0 +1,119 @@
+.contact-section {
+  background: #fff;
+  padding: 50px 20px;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.contact-wrapper {
+  background: #f5f5f5;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1100px;
+  width: 100%;
+  box-sizing: border-box; /* ✅ prevents extra width */
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  order: 1;
+}
+
+.contact-info h2 {
+  color: #c00;
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  flex: 1;
+  order: 2;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  border: none;
+  border-radius: 6px;
+  background-color: #ff0000ff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;      /* ✅ allows width to fit content */
+  padding: 8px 12px;          /* smaller padding, adjusts automatically */
+  margin-top: 5px;
+  white-space: nowrap;        /* prevent text from wrapping */
+}
+
+.contact-form button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Mobile: slightly smaller font for small devices */
+@media (max-width: 768px) {
+  .contact-form button {
+    font-size: 14px;
+    padding: 6px 10px;       /* smaller and still fits text */
+  }
+}
+
+
+.success-msg {
+  margin-bottom: 20px;
+  color: green;
+  font-size: 20px;
+}
+
+.error-msg {
+  margin-bottom: 20px;
+  color: red;
+  font-size: 20px;
+}
+
+  .contact-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Info comes first */
+  .contact-info {
+    order: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    order: 2;
+  }
+
