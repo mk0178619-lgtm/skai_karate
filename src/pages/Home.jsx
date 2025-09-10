@@ -1,4 +1,5 @@
 import InstructorCarousel from "../components/Instructor";
+import ProgramsSection from "../components/Programs"; 
 import "../styles/Home.css";
 
 function Home() {
@@ -6,10 +7,9 @@ function Home() {
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to Our Karate Academy</h1>
+        <h1>Welcome to TEAM SKAI_KOLATHUR </h1>
         <p>
-          Discipline, strength, and respect are the pillars of our training. Join
-          us to master the art of Karate and build a strong mind and body.
+          where discipline, confidence, and strength are built through Karate training. Headed by Sensei K. Manikandan (4th Dan, KIO – National Judge) under the mentorship of Shihan B. Duraivelu (6th Dan, AKF & WKF – Judge)
         </p>
       </section>
 

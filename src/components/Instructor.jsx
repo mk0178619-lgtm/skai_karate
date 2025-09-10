@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "../styles/Instructor.css"; // Import CSS
+import { useState, useEffect } from "react";
+import "../styles/Instructor.css";
 
 function InstructorCarousel() {
   const instructors = [
@@ -12,8 +12,18 @@ function InstructorCarousel() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth <= 768 ? 1 : 3);
 
-  const itemsPerPage = window.innerWidth <= 768 ? 1 : 4; // 1 for mobile, 4 for desktop
+  // ✅ Recalculate items per page on resize
+  useEffect(() => {
+    const handleResize = () => {
+      setItemsPerPage(window.innerWidth <= 768 ? 1 : 3);
+      setCurrentIndex(0); // reset to first slide on resize
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const totalSlides = Math.ceil(instructors.length / itemsPerPage);
 
   const nextSlide = () => {
