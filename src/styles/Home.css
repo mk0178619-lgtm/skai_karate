@@ -6,64 +6,108 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 50px 20px;   /* reduced */
   background: #fff;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.3rem;
+  margin-bottom: 15px;  /* tighter */
   color: #222;
 }
 
 .hero p {
   max-width: 700px;
   margin: 0 auto;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #555;
   line-height: 1.6;
 }
 
+/* Outro text */
+.outro {
+  background: #fff;
+  padding: 35px 20px;  /* reduced */
+  margin-top: 10px;
+}
+
+.outro p {
+  font-size: 1.05rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 /* Instructor Section */
-.instructors {
-  padding: 60px 20px;
+.instructors-section {
+  padding: 40px 20px;   /* reduced */
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;  /* tighter */
+  color: #222;
+  font-weight: bold;
+}
+
+/* Programs Section */
+.programs-section {
+  padding: 40px 20px;   /* reduced */
   background: #fff;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 15px;
+    padding: 40px 15px;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
 
-  .instructors {
-    padding: 40px 15px;
+  .instructors-section,
+  .programs-section {
+    padding: 30px 15px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    padding: 40px 10px;
+    padding: 30px 10px;
   }
 
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .hero p {
     font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .outro {
+    padding: 20px 10px;
   }
 }

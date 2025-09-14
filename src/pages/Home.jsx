@@ -7,15 +7,32 @@ function Home() {
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to TEAM SKAI_KOLATHUR </h1>
+        <h1>Welcome to TEAM SKAI_KOLATHUR</h1>
         <p>
-          where discipline, confidence, and strength are built through Karate training. Headed by Sensei K. Manikandan (4th Dan, KIO – National Judge) under the mentorship of Shihan B. Duraivelu (6th Dan, AKF & WKF – Judge)
+          Where discipline, confidence, and strength are built through Karate
+          training. Headed by <b>Sensei K. Manikandan</b> (4th Dan, KIO –
+          National Judge) under the mentorship of <b>Shihan B. Duraivelu</b>{" "}
+          (6th Dan, AKF & WKF – Judge).
         </p>
       </section>
 
       {/* Instructors Section */}
-      <section className="instructors">
+      <section className="instructors-section">
         <InstructorCarousel />
+      </section>
+
+      {/* Programs Section */}
+      <section className="programs-section">
+        <ProgramsSection />
+      </section>
+
+      {/* Outro Text */}
+      <section className="hero outro">
+        <p>
+          Over the years, TEAM SKAI_KOLATHUR has built a proven track record of
+          success, producing champions who have excelled at State and National
+          levels.
+        </p>
       </section>
     </div>
   );

@@ -4,16 +4,24 @@ function ProgramsSection() {
   const programs = [
     {
       title: "Traditional & Sports Karate",
-      desc: "Balanced training in both disciplines."
+      desc: "Balanced training in both disciplines.",
+      image: "/Preloader.png",
     },
     {
       title: "Tournament Preparation",
-      desc: "Coaching for State & National level championships."
+      desc: "Coaching for State & National level championships.",
+      image: "/images/programs/tournament.jpg",
     },
     {
       title: "Self-Defense Training",
-      desc: "Practical skills for safety and confidence."
-    }
+      desc: "Practical skills for safety and confidence.",
+      image: "/images/programs/selfdefense.jpg",
+    },
+    {
+      title: "Kids, Teens & Adults",
+      desc: "Programs designed for all age groups.",
+      image: "/images/programs/kids.jpg",
+    },
   ];
 
   return (
@@ -25,9 +33,15 @@ function ProgramsSection() {
 
       <div className="programs-grid">
         {programs.map((program, index) => (
-          <div key={index} className="program-card">
-            <h3>{program.title}</h3>
-            <p>{program.desc}</p>
+          <div
+            key={index}
+            className="program-card"
+            style={{ backgroundImage: `url(${program.image})` }}
+          >
+            <div className="overlay">
+              <h3>{program.title}</h3>
+              <p>{program.desc}</p>
+            </div>
           </div>
         ))}
       </div>

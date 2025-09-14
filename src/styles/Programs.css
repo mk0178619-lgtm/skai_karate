@@ -8,7 +8,6 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #e63946;
 }
 
 .programs-intro {
@@ -18,33 +17,45 @@
 }
 
 .programs-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .program-card {
-  background: #f9f9f9;
+  position: relative;
+  height: 300px;
   border-radius: 12px;
-  padding: 20px;
-  width: 260px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .program-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
 
-.program-card h3 {
-  color: #e63946;
-  margin-bottom: 10px;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  color: #fff;
+  text-align: left;
 }
 
-.program-card p {
+.overlay h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.overlay p {
   font-size: 0.95rem;
-  color: #444;
+  line-height: 1.4;
 }

@@ -101,6 +101,7 @@
 /* Mobile view */
 @media (max-width: 768px) {
   .card {
-    flex: 0 0 80%; /* 1 card at a time */
+    flex: 0 0 100%; /* 1 card at a time */
+    height: 70%;   /* allows height to adjust based on content */
   }
 }
