@@ -6,7 +6,6 @@
 .blackbelts-title {
   text-align: center;
   margin-bottom: 30px;
-  color: #c00;
 }
 
 .blackbelts-grid {
@@ -41,22 +40,22 @@
 .blackbelt-info h2 {
   margin: 10px 0;
   font-size: 18px;
+  color: #ff0000ff
 }
 
 .blackbelt-info h4 {
   margin: 5px 0;
-  color: #555;
   font-weight: normal;
 }
 
 /* 📱 Mobile: 2 columns */
 @media (max-width: 768px) {
   .blackbelts-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .blackbelt-img {
-    height: 200px;
+    height: 300px;
   }
 
   .blackbelt-info h2 {

@@ -1,24 +1,33 @@
 import { useState, useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
 import "../styles/Instructor.css";
 
 function InstructorCarousel() {
   const instructors = [
-    { id: 1, name: "Sensei R. Takeshi Fukuchi", rank: "8th Dan", img: "/Preloader.png" },
-    { id: 2, name: "Sensei Carlos Marcos Gigena", rank: "6th Dan", img: "/images/instructor2.jpg" },
-    { id: 3, name: "Sensei Dodi Rochadi", rank: "6th Dan", img: "/images/instructor3.jpg" },
-    { id: 4, name: "Sensei Júlio Almeida", rank: "5th Dan", img: "/images/instructor4.jpg" },
-    { id: 5, name: "Sensei Instructor 5", rank: "4th Dan", img: "/images/instructor5.jpg" },
-    { id: 6, name: "Sensei Instructor 6", rank: "3rd Dan", img: "/images/instructor6.jpg" },
+    { id: 1, name: "Sensei R. Takeshi Fukuchi", rank: "8th Dan", img: "/blackbelts/a.png.jpg" },
+    { id: 2, name: "Sensei Carlos Marcos Gigena", rank: "6th Dan", img: "/blackbelts/a.png.jpg" },
+    { id: 3, name: "Sensei Dodi Rochadi", rank: "6th Dan", img: "/blackbelts/a.png.jpg"},
+    { id: 4, name: "Sensei Júlio Almeida", rank: "5th Dan", img: "/blackbelts/a.png.jpg" },
+    { id: 5, name: "Sensei Instructor 5", rank: "4th Dan", img: "/blackbelts/a.png.jpg" },
+    { id: 6, name: "Sensei Instructor 6", rank: "3rd Dan", img: "/blackbelts/a.png.jpg" },
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth <= 768 ? 1 : 3);
+  const [itemsPerPage, setItemsPerPage] = useState(getItemsPerPage());
 
-  // ✅ Recalculate items per page on resize
+  // ✅ Helper to decide items per page based on screen width
+  function getItemsPerPage() {
+    if (window.innerWidth <= 768) return 1;   // mobile
+    if (window.innerWidth <= 1024) return 2;  // tablet
+    return 3;                                 // desktop
+  }
+
+  // ✅ Update items per page on resize
   useEffect(() => {
     const handleResize = () => {
-      setItemsPerPage(window.innerWidth <= 768 ? 1 : 3);
-      setCurrentIndex(0); // reset to first slide on resize
+      setItemsPerPage(getItemsPerPage());
+      setCurrentIndex(0);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -27,25 +36,27 @@ function InstructorCarousel() {
   const totalSlides = Math.ceil(instructors.length / itemsPerPage);
 
   const nextSlide = () => {
-    if (currentIndex < totalSlides - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
+    if (currentIndex < totalSlides - 1) setCurrentIndex(currentIndex + 1);
   };
 
   const prevSlide = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
+    if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
   };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => nextSlide(),
+    onSwipedRight: () => prevSlide(),
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
 
   return (
     <div className="carousel-container">
-      <h2 className="carousel-title">Our Instructors</h2>
-      <div className="carousel-wrapper">
-        <button className="arrow left" onClick={prevSlide} disabled={currentIndex === 0}>
-          ❮
-        </button>
+      <h2 className="carousel-title">
+        If you want to be the best <br /> You learn from the best
+      </h2>
 
+      <div className="carousel-wrapper" {...handlers}>
         <div className="carousel-content">
           {instructors
             .slice(currentIndex * itemsPerPage, currentIndex * itemsPerPage + itemsPerPage)
@@ -57,14 +68,17 @@ function InstructorCarousel() {
               </div>
             ))}
         </div>
+      </div>
 
-        <button
-          className="arrow right"
-          onClick={nextSlide}
-          disabled={currentIndex === totalSlides - 1}
-        >
-          ❯
-        </button>
+      {/* ✅ Pagination dots */}
+      <div className="carousel-dots">
+        {Array.from({ length: totalSlides }).map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? "active" : ""}`}
+            onClick={() => setCurrentIndex(index)}
+          ></span>
+        ))}
       </div>
     </div>
   );
