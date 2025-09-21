@@ -1,7 +1,7 @@
 .carousel-container {
   text-align: center;
-  padding: 40px 20px;
   background: #fff;
+  
 }
 
 .carousel-title {
@@ -9,6 +9,40 @@
   font-weight: bold;
   margin-bottom: 30px;
   font-style: italic;
+}
+
+/* Featured Card (below heading) */
+.featured-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.featured-card img {
+  height: 400px;        /* desktop height */
+  width: auto;          /* maintain aspect ratio */
+  object-fit: contain;   /* full image visible */
+  display: block;
+  border-radius: 12px;
+}
+
+.featured-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.featured-info p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #666;
 }
 
 /* Wrapper keeps cards centered */
@@ -38,6 +72,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding-bottom: 20px;
+  height: 400px;
 }
 
 .card img {
@@ -96,4 +131,22 @@
   .card {
     flex: 0 0 100%; /* ✅ 1 per row */
   }
-}
+
+  .featured-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .featured-card img {
+    height: 200px;   /* bigger image on mobile */
+    width: auto;
+  }
+
+  .featured-info h3 {
+    font-size: 1.6rem;
+  }
+
+  .featured-info p {
+    font-size: 1.1rem;
+  }}

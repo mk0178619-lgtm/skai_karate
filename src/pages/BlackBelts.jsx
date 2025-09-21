@@ -2,12 +2,24 @@ import React from "react";
 import "../styles/BlackBelts.css";
 
 const blackBelts = [
-  { name: "Sensei Hiroshi Tanaka", rank: "7th Dan Black Belt", image: "/Preloader.png" },
-  { name: "Sensei Ramesh", rank: "5th Dan Black Belt", image: "/blackbelts/ramesh.jpg" },
-  { name: "Sensei Arjun", rank: "4th Dan Black Belt", image: "/blackbelts/arjun.jpg" },
-  { name: "Sensei Priya", rank: "3rd Dan Black Belt", image: "/blackbelts/priya.jpg" },
-  { name: "Sensei Kiran", rank: "2nd Dan Black Belt", image: "/blackbelts/kiran.jpg" },
-  // add more as needed
+  { name: "SREE RAMAN R", year: "2023", image: "/Preloader.png" },
+  { name: "J. S. TASHWIN KAMAL", year: "2024", image: "/Preloader.png" },
+  { name: "K. S. KOWSHIK VIJAY", year: "2024", image: "/Preloader.png" },
+  { name: "SARA S", year: "2025", image: "/Preloader.png" },
+  { name: "M. GANESH KUMAR", year: "2025", image: "/Preloader.png" },
+  { name: "HARI RAM R", year: "2025", image: "/Preloader.png" },
+  { name: "SHAKSHINI SREE. H", year: "2025", image: "/Preloader.png" },
+  { name: "CHRISTOPHER KEERTHIK. G", year: "2025", image: "/Preloader.png" },
+  { name: "VINCENT VIGNESH. G", year: "2025", image: "/Preloader.png" },
+  { name: "CHANASYAA KRISHNAN", year: "2025", image: "/Preloader.png" },
+  { name: "M. D. MADHAV ABHIMANYU", year: "2025", image: "/Preloader.png" },
+  { name: "KEERTHIAKSHARA. S", year: "2025", image: "/Preloader.png" },
+  { name: "P. VIDHARTH", year: "2025", image: "/Preloader.png" },
+  { name: "V. H. VARSHITH", year: "2025", image: "/Preloader.png" },
+  { name: "ELANKADIR S", year: "2025", image: "/Preloader.png" },
+  { name: "ARUNAN S", year: "2025", image: "/Preloader.png" },
+  { name: "G. S. RAMCHARAN", year: "2025", image: "/Preloader.png" },
+  { name: "TANISHA. N", year: "2025", image: "/Preloader.png" },
 ];
 
 function BlackBelts() {
@@ -20,7 +32,7 @@ function BlackBelts() {
             <img src={belt.image} alt={belt.name} className="blackbelt-img" />
             <div className="blackbelt-info">
               <h2>{belt.name}</h2>
-              <h4>{belt.rank}</h4>
+              <h4>{belt.year}</h4>
             </div>
           </div>
         ))}

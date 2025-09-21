@@ -12,21 +12,15 @@ function Banner() {
 
         {/* Center content */}
         <div className="banner-content">
-          <h1 className="banner-title">KARATE INDIA ORGANISATION</h1>
-          <p className="banner-subtitle">
-            WKF & AKF AFFILIATED NATIONAL FEDERATION FOR THE SPORTS OF KARATE IN INDIA
-          </p>
+          <h1 className="banner-title">SKAI KARATE KOLATHUR</h1>
+          <p className="banner-subtitle"><strong>SKAI KARATE</strong></p>
 
-          <p className="banner-section">AFFILIATED WITH</p>
-          <p>
-            WORLD KARATE FEDERATION <br />
-            ASIAN KARATE FEDERATION <br />
-            COMMONWEALTH KARATE FEDERATION <br />
-            SOUTH ASIAN KARATE DO FEDERATION
-          </p>
-
-          <p className="banner-section">WKF RECOGNISED BY</p>
-          <p>INTERNATIONAL OLYMPIC COMMITTEE</p>
+          <p className="banner-section">
+            Registered by Govt of India Reg.No: 119/2007 <br />
+            Recognized by: Karate India Organisation (KIO) <br />
+            Member of: Asian Karate Federation (AKF) & World Karate Federation (WKF) <br />
+            Affiliated to: GOJU RYU SEIGOKAN KARATE DO KYOKAI (GSKK) BRAZIL <br />
+            HQ: SEIGOKAN GOJU-RYU KARATE DO - JAPAN</p>
         </div>
 
         {/* Right logos */}

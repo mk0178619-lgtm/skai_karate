@@ -1,6 +1,4 @@
-/* Home.css */
-
-/* General page spacing */
+/* General page styling */
 .home-container {
   width: 100%;
   margin: 0;
@@ -9,16 +7,41 @@
   background: #fff;
 }
 
-/* Hero Section */
+/* ================== Slider Section ================== */
+.slider-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* background filler */
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+  max-height: 100vh;   
+}
+
+
+/* ================== Hero Section ================== */
 .hero {
   text-align: center;
-  padding: 50px 20px;   /* reduced */
+  padding: 50px 20px;
   background: #fff;
 }
 
 .hero h1 {
   font-size: 2.3rem;
-  margin-bottom: 15px;  /* tighter */
+  margin-bottom: 15px;
   color: #222;
 }
 
@@ -30,10 +53,10 @@
   line-height: 1.6;
 }
 
-/* Outro text */
+/* Outro Section */
 .outro {
   background: #fff;
-  padding: 35px 20px;  /* reduced */
+  padding: 35px 20px;
   margin-top: 10px;
 }
 
@@ -45,27 +68,33 @@
   line-height: 1.6;
 }
 
-/* Instructor Section */
+/* Instructors Section */
 .instructors-section {
-  padding: 40px 20px;   /* reduced */
+  padding: 40px 20px;
   background: #fff;
 }
 
 .section-title {
   text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 25px;  /* tighter */
+  margin-bottom: 25px;
   color: #222;
   font-weight: bold;
 }
 
 /* Programs Section */
 .programs-section {
-  padding: 40px 20px;   /* reduced */
+  padding: 40px 20px;
   background: #fff;
 }
 
-/* Responsive Styling */
+/* ================== Responsive ================== */
+@media (max-width: 1024px) {
+  .slick-slide img {
+    max-height: 60vh;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 40px 15px;
@@ -88,6 +117,10 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
+
+  .slick-slide img {
+    max-height: 40vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -109,5 +142,9 @@
 
   .outro {
     padding: 20px 10px;
+  }
+
+  .slick-slide img {
+    max-height: 30vh;
   }
 }

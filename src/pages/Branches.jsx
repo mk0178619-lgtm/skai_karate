@@ -12,7 +12,7 @@ const branches = [
     name: "Bangalore",
     images: ["/branches/bangalore1.jpg", "/branches/bangalore2.jpg"],
     address: "456, MG Road, Bangalore, Karnataka",
-    map: "https://www.google.com/maps/embed?pb=YOUR_BANGALORE_EMBED_CODE",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7037515303923!2d80.20956337512533!3d13.11794438721108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265e1c3a45015%3A0x99172a802290971d!2sSKAI%20karate_kolathur!5e0!3m2!1sen!2sin!4v1758475944341!5m2!1sen!2sin",
   },
   // add more branches as needed
 ];

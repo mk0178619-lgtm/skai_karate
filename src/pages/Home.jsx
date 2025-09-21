@@ -18,7 +18,8 @@ function Home() {
           Where discipline, confidence, and strength are built through Karate
           training. Headed by <b>Sensei K. Manikandan</b> (4th Dan, KIO –
           National Judge) under the mentorship of <b>Shihan B. Duraivelu</b>{" "}
-          (6th Dan, AKF & WKF – Judge).
+          (6th Dan, AKF & WKF – Judge).With years of experience and a strong foundation in traditional & Sports karate, our team is dedicated to spreading the true spirit of martial arts.
+
         </p>
       </section>
 

@@ -4,26 +4,24 @@ import "../styles/Instructor.css";
 
 function InstructorCarousel() {
   const instructors = [
-    { id: 1, name: "Sensei R. Takeshi Fukuchi", rank: "8th Dan", img: "/blackbelts/a.png.jpg" },
-    { id: 2, name: "Sensei Carlos Marcos Gigena", rank: "6th Dan", img: "/blackbelts/a.png.jpg" },
-    { id: 3, name: "Sensei Dodi Rochadi", rank: "6th Dan", img: "/blackbelts/a.png.jpg"},
-    { id: 4, name: "Sensei Júlio Almeida", rank: "5th Dan", img: "/blackbelts/a.png.jpg" },
-    { id: 5, name: "Sensei Instructor 5", rank: "4th Dan", img: "/blackbelts/a.png.jpg" },
-    { id: 6, name: "Sensei Instructor 6", rank: "3rd Dan", img: "/blackbelts/a.png.jpg" },
-    
+    { id: 1, name: "Sempei Dr.C. Sandhiya", rank: "1st Dan Black Belt", des: "Assistant Instructor - SKAI Karate", img: "/blackbelts/a.png.jpg" },
+    { id: 2, name: "Sempei C. Arunkumar, MCA", rank: "2nd Dan Black Belt", des: "Assistant Instructor - SKAI Karate, Accredited Coach - KIO", img: "/blackbelts/a.png.jpg" },
+    { id: 3, name: "Sempei B. Saravanakumar, M.Com", rank: "2nd Dan Black Belt", des: "Assistant Instructor - SKAI Karate, Certified Coach - KIO", img: "/blackbelts/a.png.jpg"},
+    { id: 4, name: "Sempei R.VijayKrishna, MBA", rank: "1st Dan Black Belt", des: "Assistant Instructor - SKAI Karate", img: "/blackbelts/a.png.jpg" },
+    { id: 5, name: "Sempei B.Surya, BCA", rank: "1st Dan Black Belt", des:"Assistant Instructor - SKAI Karate", img: "/blackbelts/a.png.jpg" },
+    { id: 6, name: "Sempei V.Karthikeyan, B.Com", rank: "1st Dan Black Belt", des:"Assistant Instructor - SKAI Karate", img: "/blackbelts/a.png.jpg" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(getItemsPerPage());
 
-  // ✅ Helper to decide items per page based on screen width
+  // ✅ Helper for responsiveness
   function getItemsPerPage() {
     if (window.innerWidth <= 768) return 1;   // mobile
     if (window.innerWidth <= 1024) return 2;  // tablet
     return 3;                                 // desktop
   }
 
-  // ✅ Update items per page on resize
   useEffect(() => {
     const handleResize = () => {
       setItemsPerPage(getItemsPerPage());
@@ -52,10 +50,21 @@ function InstructorCarousel() {
 
   return (
     <div className="carousel-container">
+      {/* Heading */}
       <h2 className="carousel-title">
         If you want to be the best <br /> You learn from the best
       </h2>
 
+      {/* ✅ Featured Card below heading */}
+      <div className="featured-card">
+        <img src="/blackbelts/a.png.jpg" alt="Featured Sensei" />
+        <div className="featured-info">
+          <h3>Sensei K. Manikandan</h3>
+          <p>4th Dan Black Belt<br />Asst. Chief Instructor- SKAI Karate, National Judge - KIO, Joint Secretary - TDSKA</p>
+        </div>
+      </div>
+
+      {/* Carousel */}
       <div className="carousel-wrapper" {...handlers}>
         <div className="carousel-content">
           {instructors
@@ -64,13 +73,13 @@ function InstructorCarousel() {
               <div key={inst.id} className="card">
                 <img src={inst.img} alt={inst.name} />
                 <h3>{inst.name}</h3>
-                <p>{inst.rank}</p>
+                <p>{inst.rank}<br />{inst.des}</p>
               </div>
             ))}
         </div>
       </div>
 
-      {/* ✅ Pagination dots */}
+      {/* Dots */}
       <div className="carousel-dots">
         {Array.from({ length: totalSlides }).map((_, index) => (
           <span

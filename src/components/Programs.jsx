@@ -28,7 +28,7 @@ function ProgramsSection() {
     <div className="programs-container">
       <h2 className="programs-title">Our Programs</h2>
       <p className="programs-intro">
-        Kids, Teens & Adults: Programs designed for all age groups.
+        We offer comprehensive training programs that focus on discipline, fitness, self-defence, and character building. 
       </p>
 
       <div className="programs-grid">

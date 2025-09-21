@@ -25,17 +25,13 @@
   transition: transform 0.3s ease;
 }
 
-.banner-img:hover {
-  transform: scale(1.1);
-}
-
 .banner-content {
   text-align: center;
   max-width: 600px;
 }
 
 .banner-title {
-  color: #c00;
+  color: #ff0000ff;
   font-size: 2em;
   margin: 10px 0;
   text-shadow: 1px 1px #aaa;
@@ -43,13 +39,12 @@
 
 .banner-subtitle {
   margin: 5px 0;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 .banner-section {
-  color: #c00;
-  font-weight: bold;
   margin-top: 10px;
+  font-size: 1em;
 }
 
 /* --- Responsive --- */
@@ -89,12 +84,17 @@
   }
 
   .banner-title {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .banner-subtitle {
-    font-size: 0.95em;
+    font-size: 1.5em;
   }
+
+  .banner-section {
+  margin-top: 10px;
+  font-size: 1em;
+}
 }
 
 @media (max-width: 480px) {
