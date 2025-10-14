@@ -4,10 +4,10 @@ function Banner() {
   return (
     <div className="banner">
       <div className="banner-wrapper">
-        {/* Left logos */}
+        {/* Left logos: SKAI (Top), KIO (Bottom) for desktop */}
         <div className="banner-logos-left">
-          <img src="/Preloader.png" alt="Logo 1" className="banner-img" />
-          <img src="/Preloader.png" alt="Logo 2" className="banner-img" />
+          <img src="/logos/SKAI-LOGO.PNG" alt="Logo 1" className="banner-img" />
+          <img src="/logos/GOJU-RYU-LOGO.PNG" alt="Logo 2" className="banner-img" />
         </div>
 
         {/* Center content */}
@@ -23,10 +23,10 @@ function Banner() {
             HQ: SEIGOKAN GOJU-RYU KARATE DO - JAPAN</p>
         </div>
 
-        {/* Right logos */}
+        {/* Right logos: GOJU-RYU (Top) as requested, WKF (Bottom) for desktop */}
         <div className="banner-logos-right">
-          <img src="/Preloader.png" alt="Logo 3" className="banner-img" />
-          <img src="/Preloader.png" alt="Olympic Logo" className="banner-img" />
+          <img src="/logos/KIO-LOGO.PNG" alt="Logo 3" className="banner-img" />
+          <img src="/logos/WKF-LOGO.PNG" alt="Olympic Logo" className="banner-img" />
         </div>
       </div>
     </div>

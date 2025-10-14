@@ -22,7 +22,7 @@ function Preloader() {
   return (
     <div className={`preloader ${fadeOut ? "fade-out" : ""}`}>
       <img 
-        src="/Preloader.png"  
+        src="/logos/SKAI-LOGO.PNG"  
         alt="Loading..."
         className="preloader-logo"
       />

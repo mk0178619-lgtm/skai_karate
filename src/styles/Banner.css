@@ -15,8 +15,8 @@
 .banner-logos-left,
 .banner-logos-right {
   display: flex;
-  flex-direction: column;
-  gap: 15px; /* spacing between logos */
+  flex-direction: column; /* Desktop/Laptop: Logos stack vertically */
+  gap: 15px;
 }
 
 .banner-img {
@@ -34,7 +34,8 @@
   color: #ff0000ff;
   font-size: 2em;
   margin: 10px 0;
-  text-shadow: 1px 1px #aaa;
+  /* Shadow for prominent title effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .banner-subtitle {
@@ -48,6 +49,7 @@
 }
 
 /* --- Responsive --- */
+
 @media (max-width: 1024px) {
   .banner-title {
     font-size: 1.8em;
@@ -64,21 +66,33 @@
 
 @media (max-width: 768px) {
   .banner-wrapper {
-    flex-direction: column; /* stack for smaller screens */
+    flex-direction: column; /* Stack main sections */
     gap: 20px;
   }
 
-  .banner-logos-left,
-  .banner-logos-right {
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
+  /* 1. MOBILE MAIN SECTION ORDER: Left Logos (1), Content (2), Right Logos (3) */
+  .banner-logos-left {
+    order: 1; /* Top section */
+    flex-direction: row; 
+    /* Logos on corners */
+    justify-content: space-between; 
+    gap: 50px; 
   }
 
   .banner-content {
+    order: 2; /* Middle section */
     max-width: 100%;
   }
 
+  .banner-logos-right {
+    order: 3; /* Bottom section (below content) */
+    flex-direction: row;
+    /* Logos on corners */
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  /* Mobile size adjustments */
   .banner-img {
     height: 60px;
   }
@@ -92,9 +106,9 @@
   }
 
   .banner-section {
-  margin-top: 10px;
-  font-size: 1em;
-}
+    margin-top: 10px;
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 480px) {
