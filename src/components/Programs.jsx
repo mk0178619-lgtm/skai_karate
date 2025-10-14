@@ -5,22 +5,22 @@ function ProgramsSection() {
     {
       title: "Traditional & Sports Karate",
       desc: "Balanced training in both disciplines.",
-      image: "/Preloader.png",
+      image: "/programs/Traditional-and-sports-karate.JPG",
     },
     {
       title: "Tournament Preparation",
       desc: "Coaching for State & National level championships.",
-      image: "/images/programs/tournament.jpg",
+      image: "/programs/Tournament-training.JPG",
     },
     {
       title: "Self-Defense Training",
       desc: "Practical skills for safety and confidence.",
-      image: "/images/programs/selfdefense.jpg",
+      image: "/programs/Self-defence.JPG",
     },
     {
       title: "Kids, Teens & Adults",
       desc: "Programs designed for all age groups.",
-      image: "/images/programs/kids.jpg",
+      image: "/programs/Teen-karate.JPG",
     },
   ];
 
