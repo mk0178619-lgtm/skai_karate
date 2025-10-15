@@ -1,6 +1,6 @@
 .achievements-container {
   padding: 50px 20px;
-  background-color: #fff;
+  background-color: #ffff;
 }
 
 .achievements-title {
@@ -22,11 +22,11 @@
   align-items: center;
   justify-content: space-between;
   background: #f5f5f5;
-  border-radius: 12px;
   padding: 20px;
+  border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-  position: relative; /* Needed for absolute images */
+  position: relative;
 }
 
 .achievement-card:hover {
@@ -38,16 +38,20 @@
   width: 50%;
   height: 350px;
   overflow: hidden;
-  border-radius: 10px;
   position: relative;
+  background-color: #f5f5f5; /* blends better for contain images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .achievement-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: opacity 1s ease-in-out;
+  object-fit: contain;  /* ensures full image is visible */
+  object-position: center;
+  transition: transform 0.4s ease;
+  display: block;
 }
 
 /* Text container */
@@ -58,14 +62,13 @@
 
 .achievement-info h2 {
   font-size: 24px;
-  color: #ff0000;
+  color: #ff0000ff;
   margin-bottom: 10px;
 }
 
 .achievement-info h4 {
   font-size: 18px;
   font-weight: normal;
-  color: #333;
 }
 
 /* Mobile view */
@@ -77,20 +80,21 @@
 
   .achievement-image-container {
     width: 100%;
-    height: 300px;
+    height: auto;           /* adjusts height dynamically */
+    aspect-ratio: 16 / 9;   /* keeps nice proportions */
+    background-color: #f5f5f5; /* ensures no color box around image */
+  }
+
+  .achievement-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* full image visible */
   }
 
   .achievement-info {
     width: 100%;
     text-align: center;
     margin-top: 15px;
-  }
-
-  .achievement-info h2 {
-    font-size: 20px;
-  }
-
-  .achievement-info h4 {
     font-size: 16px;
   }
 }

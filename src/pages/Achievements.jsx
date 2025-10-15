@@ -23,13 +23,13 @@ const achievements = [
     image: ["/achievements/4.JPG", "/achievements/4A.JPG"],
   },
   {
-    title: "KIO All India Sub - Junior Championship at Delhi.",
-    year: "2024",
+    title: "2nd State Open Karate Championship.",
+    year: "2025",
     image: ["/achievements/5.JPG", "/achievements/5A.JPG"],
   },
   {
-    title: "2nd State Open Karate Championship.",
-    year: "2025",
+    title: "KIO All India Sub - Junior Championship at Delhi.",
+    year: "2024",
     image: ["/achievements/6.JPG", "/achievements/6A.JPG"],
   },
   {
@@ -53,94 +53,99 @@ const achievements = [
     image: ["/achievements/9.JPG", "/achievements/9A.JPG"],
   },
   {
-    title: "Our State Medalist met R.TIRUPPATI VENKATASWAMY IAAS sir.",
+    title: "TamilNadu State Sub - Junior Karate Championship at Chennai.",
     year: "2024",
     image: ["/achievements/10.JPG", "/achievements/10A.JPG"],
   },
   {
-    title: "SHOBUKAI South India Level Open Championship.",
+    title: "Our State Medalist met R.TIRUPPATI VENKATASWAMY IAAS sir.",
     year: "2024",
     image: "/achievements/11.JPG",
   },
   {
-    title: "21st OKGKS National Karate Invitational Championship.",
+    title: "SHOBUKAI South India Level Open Championship.",
     year: "2024",
-    image: "/achievements/12.JPG"
+    image: "/achievements/12.JPG",
   },
   {
-    title: "Overall Trophy at SHOBUKAI South India Level Open Championship.",
+    title: "21st OKGKS National Karate Invitational Championship.",
     year: "2024",
     image: ["/achievements/13.JPG", "/achievements/13A.JPG"],
   },
   {
-    title: "15th SHOBUKAI All India Level Open Championship.",
+    title: "Overall Trophy at SHOBUKAI South India Level Open Championship.",
     year: "2024",
-    image: "/achievements/14.JPG"
+    image: "/achievements/14.JPG",
   },
   {
-    title: "Overall Trophy at 2nd South India Level Open Championship at Erode.",
+    title: "15th SHOBUKAI All India Level Open Championship.",
     year: "2024",
     image: ["/achievements/15.JPG", "/achievements/15A.JPG"],
   },
   {
-    title: "2nd South India Level Open Championship at Erode.",
+    title: "Overall Trophy at 2nd South India Level Open Championship at Erode.",
     year: "2024",
     image: "/achievements/16.JPG",
   },
   {
-    title: "TN State Karate Championship at Trichy.",
-    year: "2023",
+    title: "2nd South India Level Open Championship at Erode.",
+    year: "2024",
     image: "/achievements/17.JPG",
   },
   {
-    title: "3rd Open Karate Championship.",
+    title: "TN State Karate Championship at Trichy.",
     year: "2023",
     image: "/achievements/18.JPG",
   },
   {
-    title: "Overall Trophy at KEMPO Invitational Open Karate Championship.",
+    title: "3rd Open Karate Championship.",
     year: "2023",
     image: "/achievements/19.JPG",
   },
   {
-    title: "Elite Open Karate Championship.",
-    year: "2022",
+    title: "Overall Trophy at KEMPO Invitational Open Karate Championship.",
+    year: "2023",
     image: "/achievements/20.JPG",
   },
   {
-    title: "Overall Trophy at 2nd State Level Invitational Karate Championship.",
+    title: "Elite Open Karate Championship.",
     year: "2022",
     image: "/achievements/21.JPG",
   },
   {
-    title: "2nd State Level Invitational Karate Championship.",
+    title: "Overall Trophy at 2nd State Level Invitational Karate Championship.",
     year: "2022",
     image: "/achievements/22.JPG",
   },
   {
-    title: "Overall Trophy at MBSK Invitation Karate Championship.",
+    title: "2nd State Level Invitational Karate Championship.",
     year: "2022",
     image: "/achievements/23.JPG",
   },
   {
-    title: "MBSK Invitation Karate Championship.",
+    title: "Overall Trophy at MBSK Invitation Karate Championship.",
     year: "2022",
     image: "/achievements/24.JPG",
   },
   {
-    title: "Chennai Open Karate (COK) Championship & League.",
+    title: "MBSK Invitation Karate Championship.",
     year: "2022",
     image: ["/achievements/25.JPG", "/achievements/25A.JPG"],
   },
   {
-    title: "Our branch student P.Madumita, scored 513 in NEET Exam.",
+    title: "Chennai Open Karate (COK) Championship & League.",
     year: "2022",
-    image: "/achievements/26.JPG"
+    image: "/achievements/26.JPG",
+  },
+  {
+    title: "TamilNadu State Sub-Junior Karate Championship.",
+    year: "2022",
+    image: ["/achievements/27.JPG", "/achievements/27A.JPG"],
   },
   {
     title: "Thiruvallur District Sub - Junior Karate Championship.",
     year: "2022",
-    image: ["/achievements/27.JPG", "/achievements/27A.JPG"],
+    image: "/achievements/28.JPG",
   },
   {
     title: "1st All India Goju-Ryu Karate Championship.",
