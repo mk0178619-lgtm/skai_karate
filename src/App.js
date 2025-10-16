@@ -13,13 +13,13 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
-import Banner from "./components/Banner"; // ✅ import Banner
+import Banner from "./components/Banner"; 
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fake loading for 2 seconds
     const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
@@ -30,8 +30,9 @@ function App() {
 
   return (
     <Router>
-      <Banner />   {/* ✅ Banner on top */}
-      <Navbar />   {/* ✅ Navbar below it */}
+      <Banner />   
+      <Navbar />  
+      <ScrollToTop /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

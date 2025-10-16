@@ -13,10 +13,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_poxq6wb",
-        "template_01e2jck",
+        "service_ioboez6",
+        "template_mzu35zl",
         form.current,
-        "kh2Bum8xYOYKGN8OA"
+        "Bo9O2h_vJ9lwUH_Tl"
       )
       .then(
         () => {
@@ -38,26 +38,26 @@ function Contact() {
       <h1 className="contact-title">Contact Us</h1>
       <div className="contact-container">
         <div className="contact-info">
-          <h2>Karate India Organisation</h2>
+          <h2>SKAI Karate Kolathur </h2>
           <p>
-            G-1, PLOT NO. 18, B-BLOCK DDA COMMUNITY CENTRE,
+            No: 48/53, Rajarajeswari Nagar,
             <br />
-            JANAK PURI, NEW DELHI-110058, INDIA
+            Kolathur, Chennai - 600099.
           </p>
           <p>
-            <strong>Email:</strong> karateindiaorganisation@gmail.com
+            <strong>Email:</strong> skaikolathur.2011@gmail.com
           </p>
           <p>
-            <strong>Phone:</strong> +91-11-49028338
+            <strong>Phone:</strong> 96000 41923
           </p>
         </div>
 
         <div className="contact-form-wrapper">
           {status === "success" && (
-            <div className="status success">✅ Your message has been sent successfully!</div>
+            <div className="status success">Your message has been sent successfully!</div>
           )}
           {status === "error" && (
-            <div className="status error">❌ Failed to send. Please try again later.</div>
+            <div className="status error">Failed to send. Please try again later.</div>
           )}
 
           <form ref={form} onSubmit={sendEmail}>

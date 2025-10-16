@@ -35,7 +35,7 @@ function Navbar() {
               <Link
                 to={link.to}
                 className={location.pathname === link.to ? "active" : ""}
-                onClick={() => setIsOpen(false)} // close menu after click
+                onClick={() => setIsOpen(false)} 
               >
                 {link.label}
               </Link>

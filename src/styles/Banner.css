@@ -15,13 +15,14 @@
 .banner-logos-left,
 .banner-logos-right {
   display: flex;
-  flex-direction: column; /* Desktop/Laptop: Logos stack vertically */
+  flex-direction: column; /* Desktop: stack vertically */
   gap: 15px;
 }
 
 .banner-img {
-  height: 100px;  /* desktop logo size */
+  height: 100px; /* desktop logo size */
   width: auto;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
@@ -34,8 +35,7 @@
   color: #ff0000ff;
   font-size: 2em;
   margin: 10px 0;
-  /* Shadow for prominent title effect */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .banner-subtitle {
@@ -48,7 +48,6 @@
   font-size: 1em;
 }
 
-/* --- Responsive --- */
 
 @media (max-width: 1024px) {
   .banner-title {
@@ -56,71 +55,192 @@
   }
 
   .banner-subtitle {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .banner-img {
-    height: 80px;
+    height: 90px;
   }
 }
+
 
 @media (max-width: 768px) {
   .banner-wrapper {
-    flex-direction: column; /* Stack main sections */
-    gap: 20px;
+    flex-direction: column;
+    gap: 25px;
   }
 
-  /* 1. MOBILE MAIN SECTION ORDER: Left Logos (1), Content (2), Right Logos (3) */
+  
   .banner-logos-left {
-    order: 1; /* Top section */
-    flex-direction: row; 
-    /* Logos on corners */
-    justify-content: space-between; 
-    gap: 50px; 
+    order: 1;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
   }
 
   .banner-content {
-    order: 2; /* Middle section */
+    order: 2;
     max-width: 100%;
   }
 
+ 
   .banner-logos-right {
-    order: 3; /* Bottom section (below content) */
+    order: 3;
     flex-direction: row;
-    /* Logos on corners */
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
+    gap: 40px;
   }
 
-  /* Mobile size adjustments */
+ 
   .banner-img {
-    height: 60px;
+    height: 100px;  
+    width: auto;
   }
 
   .banner-title {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   .banner-subtitle {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .banner-section {
-    margin-top: 10px;
-    font-size: 1em;
+    margin-top: 12px;
+    font-size: 1.1em;
   }
 }
 
-@media (max-width: 480px) {
-  .banner-img {
-    height: 50px;
-  }
 
+.banner {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.banner-logos-left,
+.banner-logos-right {
+  display: flex;
+  flex-direction: column; /* Desktop: stack vertically */
+  gap: 15px;
+}
+
+.banner-img {
+  height: 100px; /* desktop logo size */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.banner-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.banner-title {
+  color: #ff0000ff;
+  font-size: 2em;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-subtitle {
+  margin: 5px 0;
+  font-size: 1.5em;
+}
+
+.banner-section {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* --- Tablet (<=1024px) --- */
+@media (max-width: 1024px) {
   .banner-title {
-    font-size: 1.3em;
+    font-size: 1.8em;
   }
 
   .banner-subtitle {
-    font-size: 0.9em;
+    font-size: 1.2em;
+  }
+
+  .banner-img {
+    height: 90px;
   }
 }
+
+/* --- Mobile (<=768px) --- */
+@media (max-width: 768px) {
+  .banner-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* Keep top logos row */
+  .banner-logos-left {
+    order: 1;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .banner-content {
+    order: 2;
+    max-width: 100%;
+  }
+
+  /* Bottom logos row */
+  .banner-logos-right {
+    order: 3;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  /* 🔥 Make logos larger and centered */
+  .banner-img {
+    height: 130px;  /* Increased for mobile */
+    width: auto;
+  }
+
+  .banner-title {
+    font-size: 2.2em;
+  }
+
+  .banner-subtitle {
+    font-size: 1.6em;
+  }
+
+  .banner-section {
+    margin-top: 12px;
+    font-size: 1.1em;
+  }
+}
+
+/* --- Small Phones (<=480px) --- */
+@media (max-width: 480px) {
+  .banner-img {
+    height: 100px; /* Bigger than before */
+  }
+
+  .banner-title {
+    font-size: 1.6em;
+  }
+
+  .banner-subtitle {
+    font-size: 1.1em;
+  }
+
+  .banner-section {
+    font-size: 0.95em;
+  }
+}
+
