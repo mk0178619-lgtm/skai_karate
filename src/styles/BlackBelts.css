@@ -1,5 +1,5 @@
 .blackbelts-container {
-  padding: 40px;
+  padding: 40px 20px;
   background: #fff;
 }
 
@@ -40,16 +40,16 @@
 
 .blackbelt-info h2 {
   margin: 10px 0;
-  font-size: 18px;
-  color: #ff0000ff
+  font-size: 20px;
+  color: #ff0000;
 }
 
 .blackbelt-info h4 {
   margin: 5px 0;
   font-weight: normal;
+  color: #555;
 }
 
-/* 📱 Mobile: 2 columns */
 @media (max-width: 768px) {
   .blackbelts-grid {
     grid-template-columns: repeat(1, 1fr);

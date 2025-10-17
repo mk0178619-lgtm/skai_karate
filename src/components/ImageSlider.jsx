@@ -1,7 +1,8 @@
-// components/ImageSlider.js
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../styles/ImageSlider.css";
 
 function ImageSlider() {
   const settings = {
@@ -11,37 +12,23 @@ function ImageSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    adaptiveHeight: true, // ✅ auto height per image
+    arrows: false,
   };
 
   const images = [
-    "/Preloader.png",
-    "/blackbelts/a.png.jpg",
+    "/home/1.JPG",
+    "/home/2.JPG",
+    "/home/3.JPG",
+    "/home/4.JPG",
+    "/home/5.JPG",
   ];
 
   return (
-    <div style={{ width: "100vw", overflow: "hidden" }}>
+    <div className="slider-container">
       <Slider {...settings}>
         {images.map((img, index) => (
-          <div
-            key={index}
-            style={{
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              background: "black", // filler if aspect ratio doesn’t match width
-            }}
-          >
-            <img
-              src={img}
-              alt={`slide-${index}`}
-              style={{
-                width: "100%",   // ✅ full screen width
-                height: "auto",  // ✅ keep full image visible
-                objectFit: "hidden",
-              }}
-            />
+          <div className="slide" key={index}>
+            <img src={img} alt={`slide-${index}`} className="slide-image" />
           </div>
         ))}
       </Slider>

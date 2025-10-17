@@ -3,6 +3,11 @@ import "../styles/Achievements.css";
 
 const achievements = [
   {
+    title: "Team SKAI_Kolathur at NEWS",
+    year: "",
+    image: ["/achievements/NEWS.JPG", "/achievements/NEWS1.JPG", "/achievements/NEWS2.JPG"],
+  },
+  {
     title: "TamilNadu State Sub - Junior Karate Championship at Trichy.",
     year: "2025",
     image: ["/achievements/1.JPG", "/achievements/1A.JPG"],
@@ -169,7 +174,6 @@ function Achievements() {
 }
 
 function AchievementCard({ item }) {
-  // Normalize images array and memoize it to avoid unnecessary re-renders
   const images = useMemo(
     () => (Array.isArray(item.image) ? item.image : [item.image]),
     [item.image]

@@ -15,12 +15,12 @@
 .banner-logos-left,
 .banner-logos-right {
   display: flex;
-  flex-direction: column; /* Desktop: stack vertically */
+  flex-direction: column; 
   gap: 15px;
 }
 
 .banner-img {
-  height: 100px; /* desktop logo size */
+  height: 100px; 
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -32,7 +32,7 @@
 }
 
 .banner-title {
-  color: #ff0000ff;
+  color: #ff0000;
   font-size: 2em;
   margin: 10px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -129,12 +129,12 @@
 .banner-logos-left,
 .banner-logos-right {
   display: flex;
-  flex-direction: column; /* Desktop: stack vertically */
+  flex-direction: column; 
   gap: 15px;
 }
 
 .banner-img {
-  height: 100px; /* desktop logo size */
+  height: 100px; 
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -146,7 +146,7 @@
 }
 
 .banner-title {
-  color: #ff0000ff;
+  color: #ff0000;
   font-size: 2em;
   margin: 10px 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -184,7 +184,6 @@
     gap: 25px;
   }
 
-  /* Keep top logos row */
   .banner-logos-left {
     order: 1;
     flex-direction: row;
@@ -197,7 +196,6 @@
     max-width: 100%;
   }
 
-  /* Bottom logos row */
   .banner-logos-right {
     order: 3;
     flex-direction: row;
@@ -205,9 +203,8 @@
     gap: 40px;
   }
 
-  /* 🔥 Make logos larger and centered */
   .banner-img {
-    height: 130px;  /* Increased for mobile */
+    height: 130px;  
     width: auto;
   }
 
@@ -228,7 +225,7 @@
 /* --- Small Phones (<=480px) --- */
 @media (max-width: 480px) {
   .banner-img {
-    height: 100px; /* Bigger than before */
+    height: 100px; 
   }
 
   .banner-title {

@@ -3,14 +3,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #ffff;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 9999;
-  transition: opacity 1s ease; /* smooth fade out */
+  transition: opacity 1s ease; 
 }
 
 .preloader.fade-out {

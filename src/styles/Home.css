@@ -21,7 +21,7 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  background: #fff; /* background filler */
+  background: #fff; 
 }
 
 .slick-slide img {
@@ -35,21 +35,20 @@
 /* ================== Hero Section ================== */
 .hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
+  padding-bottom: 0px;
   background: #fff;
 }
 
 .hero h1 {
   font-size: 2.3rem;
   margin-bottom: 15px;
-  color: #222;
 }
 
 .hero p {
   max-width: 700px;
   margin: 0 auto;
   font-size: 1.05rem;
-  color: #555;
   line-height: 1.6;
 }
 
@@ -62,7 +61,6 @@
 
 .outro p {
   font-size: 1.05rem;
-  color: #333;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
@@ -78,7 +76,6 @@
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 25px;
-  color: #222;
   font-weight: bold;
 }
 

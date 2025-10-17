@@ -54,10 +54,11 @@ function Contact() {
 
         <div className="contact-form-wrapper">
           {status === "success" && (
-            <div className="status success">Your message has been sent successfully!</div>
+            <div className="status success">Thanks for reaching out to SKAI Karate Kolathur.</div>
           )}
           {status === "error" && (
-            <div className="status error">Failed to send. Please try again later.</div>
+            <div className="status error">We're sorry, your message couldn't be sent right now.<br />
+            Please try again later or contact us directly at <strong>skaikolathur.2011@gmail.com</strong>.</div>
           )}
 
           <form ref={form} onSubmit={sendEmail}>

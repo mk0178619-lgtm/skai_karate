@@ -13,7 +13,7 @@ function About() {
         founded by four directors – Shihan B. Duraivelu, Shihan G. Gajendran,
         Shihan N. Pandian, and Shihan B. Loganathan.
       </p>
-      <img src="/blackbelts/a.png.jpg" alt="About Karate" className="about-img" />
+      <img src="/about/1.JPG" alt="About Karate" className="about-img" />
 
       <p>
         Sensei K. Manikandan is the founder and guiding force of our dojo. With
@@ -21,7 +21,7 @@ function About() {
         discipline, technique, and character, inspiring them to reach their full
         potential both on and off the mat.
       </p>
-      <img src="/images/about2.jpg" alt="Sensei K. Manikandan" className="about-img" />
+      <img src="/about/2.JPG" alt="Sensei K. Manikandan" className="about-img" />
 
       <p>
         Our journey began humbly in Kolathur with just a few students, where
@@ -29,30 +29,26 @@ function About() {
         Through passion, dedication, and a focus on quality training, the dojo
         steadily grew, and today we proudly operate 8 branches across Chennai
         and its surroundings.
-      </p>
-      <img src="/images/about3.jpg" alt="Training Session" className="about-img" />
-
-      <p>
+      <br/>
         The growth of TEAM SKAI_KOLATHUR is powered by our committed team of
         Assistant Instructors. With their expertise and dedication, they guide
         students to excel in Karate while nurturing values of confidence, focus,
         and respect.
         <br />
-        Our Assistant Instructor:
+        <h2>Our Assistant Instructors</h2>
+        1. Sempei Dr. C. Sandhiya
         <br />
-        1.
+        2. Sempei C. Arunkumar, MCA
         <br />
-        2.
+        3. Sempei B. Saravanakumar, M.Com
         <br />
-        3.
+        4. Sempei R. VijayKrishna, MBA
         <br />
-        4.
+        5. Sempei B. Surya, BCA
         <br />
-        5.
-        <br />
-        6.
+        6. Sempei V. Karthikeyan, B.Com
       </p>
-      <img src="/images/about4.jpg" alt="Assistant Instructors" className="about-img" />
+      <img src="/about/3.JPG" alt="Assistant Instructors" className="about-img" />
 
       <h2>Our Training Style</h2>
       <p>
@@ -63,17 +59,11 @@ function About() {
         defence, breathing control, and mental discipline. Training is rooted in
         Kihon (basics), Kata (forms), and Kumite (sparring), ensuring the
         holistic development of both body and mind.
-      </p>
-      <img src="/images/about5.jpg" alt="Karate Training" className="about-img" />
-
-      <p>
+      <br/>
         In addition to traditional training, TEAM SKAI_KOLATHUR also offers
         Sports Karate, Self-Defence, and Tournament Coaching, with our students
         consistently excelling at state and national-level competitions.
-      </p>
-      <img src="/images/about6.jpg" alt="Karate Tournament" className="about-img" />
-
-      <p>
+      <br/>
         At SKAI_Kolathur, we believe Karate is more than just a martial art—it
         is a way of life that builds respect, resilience, and leadership. Our
         mission is to empower students of all ages to embrace discipline, stay
@@ -82,7 +72,6 @@ function About() {
         shape confident individuals who carry the true spirit of Karate into
         every aspect of their lives.
       </p>
-      <img src="/images/about7.jpg" alt="Karate Lifestyle" className="about-img" />
     </div>
   );
 }

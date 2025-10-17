@@ -12,7 +12,6 @@
 .programs-intro {
   font-size: 1.1rem;
   margin-bottom: 40px;
-  color: #333;
 }
 
 .programs-grid {
@@ -30,7 +29,7 @@
   background-position: center;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   
 }
 

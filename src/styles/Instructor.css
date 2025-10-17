@@ -11,7 +11,6 @@
   font-style: italic;
 }
 
-/* Featured Card (below heading) */
 .featured-card {
   display: flex;
   align-items: center;
@@ -26,9 +25,9 @@
 }
 
 .featured-card img {
-  height: 400px;        /* desktop height */
-  width: auto;          /* maintain aspect ratio */
-  object-fit: contain;   /* full image visible */
+  height: 400px;        
+  width: auto;          
+  object-fit: contain;   
   display: block;
   border-radius: 12px;
 }
@@ -37,15 +36,15 @@
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
+  color: #ff0000;
 }
 
 .featured-info p {
   margin: 5px 0 0;
   font-size: 1rem;
-  color: #666;
+  color: #555;
 }
 
-/* Wrapper keeps cards centered */
 .carousel-wrapper {
   display: flex;
   justify-content: center;
@@ -53,20 +52,20 @@
   overflow: hidden;
   width: 100%;
   position: relative;
-  padding-bottom: 30px;  /* ⬅ creates breathing room below cards */
+  padding-bottom: 30px;  
 }
 
 .carousel-content {
   display: flex;
-  justify-content: center; /* ✅ centers last row */
+  justify-content: center; 
   gap: 20px;
   width: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 .card {
-  flex: 0 0 calc(33.33% - 20px); /* ✅ 3 per row default */
-  max-width: 300px; /* prevents extra stretching */
+  flex: 0 0 calc(33.33% - 20px); 
+  max-width: 300px; 
   background: #f5f5f5;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -80,8 +79,8 @@
   height: 300px;
   object-fit: cover;
   object-position: top;
-  border-top-left-radius: 12px;   /* round top-left */
-  border-top-right-radius: 12px;  /* round top-right */
+  border-top-left-radius: 12px;   
+  border-top-right-radius: 12px;  
 }
 
 
@@ -89,16 +88,15 @@
 .card h3 {
   font-size: 1.1rem;
   margin: 8px 0;
-  color: #ff0000ff;
+  color: #ff0000;
   font-weight: bold;
 }
 
 .card p {
   font-size: 0.95rem;
-  color: #444;
+  color: #555;
 }
 
-/* Pagination dots */
 .carousel-dots {
   margin-top: 15px;
   display: flex;
@@ -116,20 +114,20 @@
 }
 
 .dot.active {
-  background: #ff0000ff;
+  background: #ff0000;
 }
 
-/* Tablet view */
+
 @media (max-width: 1024px) {
   .card {
-    flex: 0 0 calc(50% - 20px); /* ✅ 2 per row */
+    flex: 0 0 calc(50% - 20px); 
   }
 }
 
 /* Mobile view */
 @media (max-width: 768px) {
   .card {
-    flex: 0 0 100%; /* ✅ 1 per row */
+    flex: 0 0 100%; 
   }
 
   .featured-card {
@@ -139,14 +137,14 @@
   }
 
   .featured-card img {
-    height: 200px;   /* bigger image on mobile */
+    height: 400px;   
     width: auto;
   }
 
   .featured-info h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .featured-info p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }}

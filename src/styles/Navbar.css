@@ -37,7 +37,7 @@
 }
 
 .nav-links li a.active {
-  background: #ff0000ff;
+  background: #ff0000;
 }
 
 /* --- Mobile Styles --- */
@@ -47,7 +47,6 @@
   cursor: pointer;
 }
 
-/* Show menu toggle on small screens */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
