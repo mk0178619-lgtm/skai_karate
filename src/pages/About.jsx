@@ -38,23 +38,23 @@ function About() {
         <h2>Our Assistant Instructors</h2>
         1. Sempei Dr. C. Sandhiya
         <br />
-        2. Sempei C. Arunkumar, MCA
+        2. Sempei C. Arunkumar
         <br />
-        3. Sempei B. Saravanakumar, M.Com
+        3. Sempei B. Saravanakumar
         <br />
-        4. Sempei R. VijayKrishna, MBA
+        4. Sempei R. VijayKrishna
         <br />
-        5. Sempei B. Surya, BCA
+        5. Sempei B. Surya
         <br />
-        6. Sempei V. Karthikeyan, B.Com
+        6. Sempei V. Karthikeyan
       </p>
       <img src="/about/3.JPG" alt="Assistant Instructors" className="about-img" />
 
       <h2>Our Training Style</h2>
       <p>
         We specialise in Seigokan Goju-Ryu Karate, a traditional Japanese style
-        founded in 1945 by Seigo Tada Sensei and presently led by Grand Master
-        Takeshi Fukuchi. Known for its unique balance of hard and soft
+        founded in 1945 by Seigo Tada Sensei and presently led by Grand Master Kyoshi Takeshi Fukuchi, 8th Dan.
+         Known for its unique balance of hard and soft
         techniques, Seigokan Goju-Ryu emphasizes powerful strikes, close-range
         defence, breathing control, and mental discipline. Training is rooted in
         Kihon (basics), Kata (forms), and Kumite (sparring), ensuring the

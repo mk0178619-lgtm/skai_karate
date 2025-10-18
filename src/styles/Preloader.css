@@ -1,3 +1,4 @@
+/* --- Full Screen Loader --- */
 .preloader {
   display: flex;
   justify-content: center;
@@ -10,23 +11,73 @@
   right: 0;
   bottom: 0;
   z-index: 9999;
-  transition: opacity 1s ease; 
+  transition: opacity 1s ease;
+  text-align: center;
 }
 
+/* Fade out after load */
 .preloader.fade-out {
   opacity: 0;
   pointer-events: none;
 }
 
-.preloader-logo {
-  width: 50%;
-  max-width: 300px;
-  height: auto;
-  animation: fadeInOut 2s infinite ease-in-out;
+/* --- Content Wrapper --- */
+.preloader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* --- Logo --- */
+.preloader-logo {
+  width: 50%;
+  max-width: 250px;
+  height: auto;
+  animation: fadeInOut 2s infinite ease-in-out;
+  margin-bottom: 20px;
+}
+
+/* --- Fade In/Out Animation for Logo --- */
 @keyframes fadeInOut {
   0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+/* --- Title --- */
+.preloader-title {
+  color: #ff0000; /* bold red */
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Anniversary Line --- */
+.preloader-anniversary {
+  color: #f39c12; /* golden text */
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  opacity: 0.95;
+}
+
+
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .preloader-logo {
+    width: 70%;
+    max-width: 180px;
+  }
+
+  .preloader-title {
+    font-size: 1.1rem;
+  }
+
+  .preloader-anniversary {
+    font-size: 0.9rem;
+  }
 }

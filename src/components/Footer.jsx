@@ -37,10 +37,19 @@ function Footer() {
         {/* Center Section - Text */}
         <div className="footer-text">
           <p className="footer-anniversary">
-            🎉 Celebrating 15 Years of Excellence in Karate Training 🎉
+            Marking 15 Years of Outstanding Contribution to Karate
           </p>
-          <p>© 2025 Karate Academy | All Rights Reserved</p>
-          <p className="footer-credit">Designed & Developed with ❤️</p>
+          <p>© 2025 TEAM SKAI_KOLATHUR | All Rights Reserved</p>
+          <p className="footer-credit">
+            Designed & Developed by{" "}
+            <a
+              href="www.linkedin.com/in/muthukumarb2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Muthukumar. B
+            </a>
+          </p>
         </div>
       </div>
     </footer>

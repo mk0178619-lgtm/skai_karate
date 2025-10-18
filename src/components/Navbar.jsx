@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h2 className="navbar-logo">KIO</h2>
+        <h2 className="navbar-logo">MENU</h2>
 
         {/* Hamburger / 3 dots */}
         <div

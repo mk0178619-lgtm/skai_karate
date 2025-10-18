@@ -58,8 +58,9 @@ function InstructorCarousel() {
       <div className="featured-card">
         <img src="/instructor/MANIKANDAN.JPG" alt="Featured Sensei" />
         <div className="featured-info">
+          <h3>Honarary Coach</h3>
           <h3>Sensei K. Manikandan</h3>
-          <p>4th Dan Black Belt<br />Asst. Chief Instructor- SKAI Karate, National Judge - KIO, Joint Secretary - TDSKA</p>
+          <p>4th Dan Black Belt<br />Asst. Chief Instructor- SKAI Karate, National Judge - KIO, Joint Secretary - TDSKA</p>
         </div>
       </div>
 

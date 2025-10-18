@@ -16,7 +16,7 @@ function Banner() {
           <p className="banner-subtitle"><strong>SKAI KARATE</strong></p>
 
           <p className="banner-section">
-            Registered by Govt of India Reg.No: 119/2007 <br />
+            Registered by Govt of India Reg.No: 199/2007 <br />
             Recognized by: Karate India Organisation (KIO) <br />
             Member of: Asian Karate Federation (AKF) & World Karate Federation (WKF) <br />
             Affiliated to: GOJU RYU SEIGOKAN KARATE DO KYOKAI (GSKK) BRAZIL <br />

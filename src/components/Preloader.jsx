@@ -9,11 +9,10 @@ function Preloader() {
     const handleLoad = () => {
       // Trigger fade-out animation before removing completely
       setFadeOut(true);
-      setTimeout(() => setLoading(false), 1000); // matches CSS animation time
+      setTimeout(() => setLoading(false), 1000); // matches CSS transition
     };
 
     window.addEventListener("load", handleLoad);
-
     return () => window.removeEventListener("load", handleLoad);
   }, []);
 
@@ -21,11 +20,17 @@ function Preloader() {
 
   return (
     <div className={`preloader ${fadeOut ? "fade-out" : ""}`}>
-      <img 
-        src="/logos/SKAI-LOGO.PNG"  
-        alt="Loading..."
-        className="preloader-logo"
-      />
+      <div className="preloader-content">
+        <img
+          src="/logos/SKAI-LOGO.PNG"
+          alt="Loading..."
+          className="preloader-logo"
+        />
+        <h1 className="preloader-title">SKAI KARATE KOLATHUR</h1>
+        <p className="preloader-anniversary">
+          Marking 15 Years of Outstanding Contribution to Karate
+        </p>
+      </div>
     </div>
   );
 }

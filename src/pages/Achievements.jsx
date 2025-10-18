@@ -5,7 +5,7 @@ const achievements = [
   {
     title: "Team SKAI_Kolathur at NEWS",
     year: "",
-    image: ["/achievements/NEWS.JPG", "/achievements/NEWS1.JPG", "/achievements/NEWS2.JPG"],
+    image: ["/achievements/NEWS.JPG", "/achievements/NEWS1.JPG"],
   },
   {
     title: "TamilNadu State Sub - Junior Karate Championship at Trichy.",

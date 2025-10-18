@@ -16,11 +16,12 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #f39c12;
   font-size: 1.2rem;
   margin: 0;
 }
 
+/* Navigation links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -29,15 +30,18 @@
 }
 
 .nav-links li a {
-  color: #fff;
+  color: #f39c12;
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.nav-links li a.active {
-  background: #ff0000;
+/* Active link and hover state */
+.nav-links li a.active,
+.nav-links li a:hover {
+  background: #ff0000; /* Karate red */
+  color: #fff;
 }
 
 /* --- Mobile Styles --- */
@@ -45,6 +49,7 @@
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #f39c12; /* gold accent for icon */
 }
 
 @media (max-width: 768px) {
@@ -62,6 +67,10 @@
     width: 200px;
     padding: 10px;
     border-radius: 8px;
+
+    /* Gold accent for dropdown */
+    border: 1px solid #f39c12;
+    box-shadow: 0 2px 10px rgba(243, 156, 18, 0.3);
   }
 
   .nav-links.open {
