@@ -62,7 +62,7 @@
 }
 
 .footer-social a:hover {
-  color: #ff0000; /* karate red */
+  color: #ff0000; 
   transform: scale(1.1);
 }
 
@@ -73,13 +73,13 @@
 }
 
 .footer-credit a {
-  color: #f39c12; /* gold color */
+  color: #f39c12; 
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-credit a:hover {
-  color: #ff0000; /* red on hover */
+  color: #ff0000; 
   text-decoration: underline;
 }
 

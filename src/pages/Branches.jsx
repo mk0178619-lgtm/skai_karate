@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Branches.css"; // Import CSS
+import "../styles/Branches.css"; 
 
 const branches = [
   {
@@ -54,7 +54,6 @@ const branches = [
 ];
 
 function Branches() {
-  // Store image index per branch
   const [imageIndexes, setImageIndexes] = useState(branches.map(() => 0));
 
   useEffect(() => {

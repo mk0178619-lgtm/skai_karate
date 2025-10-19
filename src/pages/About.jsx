@@ -7,10 +7,10 @@ function About() {
       <h1>About Us</h1>
       <p>
         SKAI_Kolathur branch was started in 2011 by Sensei K. Manikandan (4th
-        Dan, KIO – National Judge) under the guidance of Shihan B. Duraivelu,
+        Dan, KIO - National Judge) under the guidance of Shihan B. Duraivelu,
         with the mission of promoting Karate as a way of life. SKAI_Kolathur is
         a proud branch of the Shuhari Karate Association of India (SKAI Karate),
-        founded by four directors – Shihan B. Duraivelu, Shihan G. Gajendran,
+        founded by four directors - Shihan B. Duraivelu, Shihan G. Gajendran,
         Shihan N. Pandian, and Shihan B. Loganathan.
       </p>
       <img src="/about/1.JPG" alt="About Karate" className="about-img" />

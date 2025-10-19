@@ -16,9 +16,11 @@ function Home() {
         <h1>Welcome to TEAM SKAI_KOLATHUR</h1>
         <p>
           Where discipline, confidence, and strength are built through Karate
-          training. Headed by <b>Sensei K. Manikandan</b> (4th Dan, KIO –
+          training. Headed by <b>Sensei K. Manikandan</b> (4th Dan, KIO -
           National Judge) under the mentorship of <b>Shihan B. Duraivelu</b>{" "}
-          (6th Dan, AKF & WKF – Judge).With years of experience and a strong foundation in traditional & Sports karate, our team is dedicated to spreading the true spirit of martial arts.
+          (6th Dan, AKF & WKF - Judge).
+          With years of experience and a strong foundation in traditional & Sports karate, 
+          our team is dedicated to spreading the true spirit of martial arts.
 
         </p>
       </section>

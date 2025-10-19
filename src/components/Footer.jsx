@@ -43,7 +43,7 @@ function Footer() {
           <p className="footer-credit">
             Designed & Developed by{" "}
             <a
-              href="www.linkedin.com/in/muthukumarb2"
+              href="https://www.linkedin.com/in/muthukumarb2/"
               target="_blank"
               rel="noopener noreferrer"
             >

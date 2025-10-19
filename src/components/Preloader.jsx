@@ -7,9 +7,8 @@ function Preloader() {
 
   useEffect(() => {
     const handleLoad = () => {
-      // Trigger fade-out animation before removing completely
       setFadeOut(true);
-      setTimeout(() => setLoading(false), 1000); // matches CSS transition
+      setTimeout(() => setLoading(false), 1000); 
     };
 
     window.addEventListener("load", handleLoad);

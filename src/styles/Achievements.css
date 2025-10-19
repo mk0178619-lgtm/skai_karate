@@ -73,7 +73,7 @@
   color: #555;
 }
 
-/* 📱 Mobile view */
+/* Mobile view */
 @media (max-width: 768px) {
   .achievement-card {
     flex-direction: column;
