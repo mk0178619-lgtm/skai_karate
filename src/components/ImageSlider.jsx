@@ -21,6 +21,7 @@ function ImageSlider() {
     "/home/3.JPG",
     "/home/4.JPG",
     "/home/5.JPG",
+    "/home/6.JPG",
   ];
 
   return (
