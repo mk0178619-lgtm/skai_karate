@@ -6,7 +6,7 @@
       "has": [
         { "type": "host", "value": "skaikarate-kolathur.com" }
       ],
-      "destination": "https://www.skaikarate-kolathur.com/:1",
+      "destination": "https://www.skaikarate-kolathur.com/%3A1",
       "permanent": true
     },
     {
