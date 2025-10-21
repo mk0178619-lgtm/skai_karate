@@ -10,11 +10,8 @@
       "permanent": true
     },
     {
-      "source": "/(.*)",
-      "has": [
-        { "type": "scheme", "value": "http" }
-      ],
-      "destination": "https://www.skaikarate-kolathur.com/:1",
+      "source": "/index.html",
+      "destination": "/",
       "permanent": true
     }
   ]
