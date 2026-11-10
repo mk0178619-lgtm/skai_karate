@@ -1,0 +1,92 @@
+.contact-page {
+  background: #fff;
+  padding: 50px 20px;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  flex-wrap: wrap; 
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-info h2 {
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+
+.contact-form-wrapper {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-form-wrapper label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.contact-form-wrapper button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form-wrapper button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.status.success {
+  color: green;
+}
+
+.status.error {
+  color: red;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-form-wrapper button {
+    width: auto;
+  }
+}
