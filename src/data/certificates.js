@@ -21,7 +21,7 @@
 // Canonical public address of the site (same host used in vercel.json,
 // sitemap.xml and the canonical tag). QR codes always point here, even when
 // you preview the site on localhost or a Vercel preview URL.
-export const SITE_URL = "https://www.mkaikarate-india.com";
+export const SITE_URL = "https://mkaikarate-lime.vercel.app";
 
 // Default wording from the reference certificate. Override per record if needed.
 const DEFAULTS = {
