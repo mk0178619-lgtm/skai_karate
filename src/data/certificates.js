@@ -18,10 +18,20 @@
 // Do NOT delete it, otherwise the QR code will show "Not Found" instead.
 // -----------------------------------------------------------------------------
 
-// Canonical public address of the site (same host used in vercel.json,
-// sitemap.xml and the canonical tag). QR codes always point here, even when
-// you preview the site on localhost or a Vercel preview URL.
-export const SITE_URL = "https://mkaikarate-lime.vercel.app";
+// Fallback address, used only when the code runs outside a browser.
+export const SITE_URL = "https://www.skaikarate-kolathur.com";
+
+// The address QR codes point to. It follows whatever domain the site is
+// opened on (custom domain, *.vercel.app, ...), so the QR code and the
+// downloaded PDF always match the live site automatically.
+// Tip: open the site on the domain you want printed before you print or
+// download a certificate. On localhost the QR would point to localhost.
+export function getSiteUrl() {
+  if (typeof window !== "undefined" && window.location?.origin) {
+    return window.location.origin;
+  }
+  return SITE_URL;
+}
 
 // Default wording from the reference certificate. Override per record if needed.
 const DEFAULTS = {
@@ -44,11 +54,6 @@ const RAW_CERTIFICATES = [
     studentName: "Sample Revoked Student",
     certificateNumber: "DEMO-0002",
     status: "revoked",
-  },
-  {
-    id: "DEMO-100",
-    studentName: "Sample Student",
-    certificateNumber: "DEMO-100",
   },
   // ---- REAL RECORDS GO BELOW THIS LINE ----
   // {
@@ -106,7 +111,7 @@ export function getCertificateById(id) {
 
 /** Public verification URL that is encoded in the QR code. */
 export function getVerifyUrl(id) {
-  return `${SITE_URL}/verify/${encodeURIComponent(id)}`;
+  return `${getSiteUrl()}/verify/${encodeURIComponent(id)}`;
 }
 
 /** Anything other than exactly "valid" is treated as revoked (fail closed). */
